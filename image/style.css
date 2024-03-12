@@ -1,0 +1,797 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+input[type="checkbox"] {
+
+
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ *{
+
+  --back-ground1: #212020;
+  --back-ground2:#3d3b3b;
+  --text-color: #fff;
+  --text-dark-color:#c0bbbb70;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 120%;
+  --text-shadow: 2px 2px 1px rgba(128,128,128,0.284);
+  color: #eee;
+}
+
+
+.dark{
+
+position: fixed;
+width: 2%;
+top:1;
+z-index: 999999;
+right: 17.5%;
+height: 10vh;
+opacity: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+--back-ground1: #fff;
+--back-ground2:#eee;
+--text-color: #000;
+--text-dark-color:#00000070;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 120%;
+--text-shadow: 2px 2px 1px rgba(128,128,128,0.284);
+}
+
+.nav{
+width: 100%;
+background-color: white;
+position: fixed;
+z-index:1000;
+padding: 0.5%;
+background-color: var(--back-ground1);
+}
+.nav ul{
+    
+list-style: none;
+position: relative;
+left:45%;
+}
+.nav ul li {
+    float: left;
+    padding: 1%;
+    
+    }
+
+
+.nav ul li a{
+    padding: 1%;
+text-decoration: none;
+color: var(--text-color);
+font-size: 20px;
+}
+
+.nav h1 {
+
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 32px;
+}
+.nav h1 a {
+
+    text-decoration: none;
+color: var(--text-color);
+    
+}
+
+.nav a i {
+position: absolute;
+left: 80%;
+top: 30%;
+font-size: 35px;
+  color: var(--text-color);
+}
+
+
+ .parent{
+width: 100%;
+height: 100%;
+background-color: var(--back-ground2);
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+ }
+ .imgg{
+background-color: #f1f1f1;
+height: 60%;
+width: 30%;
+border-radius: 80%;
+ }
+.fontt{
+  background-color: var(--back-ground2);  
+    height: 60%;
+    width: 30%;
+    
+}
+
+.imgg img{
+height: 100%;
+width: 100%;
+}
+
+
+.fontt h1 {
+margin-top: 20%;
+
+}
+
+.fontt p{
+
+
+margin-top: 7%;
+}
+
+  .fontt button{display: inline-block;
+
+border: none;
+cursor: pointer;
+padding: 3%;
+border-radius: 30px;
+margin-top: 4%;
+width: 35%;
+font-size: 18px;
+background-color: rgb(239, 41, 41);
+font-weight: 500;
+color:white;
+}
+
+
+
+.fontt button:hover {
+    background-color: orangered;
+  
+  }
+
+
+.fontt h1{
+
+    font-family: 'Amatic SC', cursive;
+     color:RGB(55, 55, 63);
+     font-size: 65px;
+     color: var(--text-color);
+}
+.fontt p{
+    
+font-size: (79, 79, 90)
+}
+
+.fontt  a  {
+text-decoration: none;
+position: relative;
+top: 1%;
+
+
+
+}  
+
+.fontt i {
+margin-left: 15%;
+font-size: 30px;
+color: black;
+}
+
+.fontt h5 {
+
+    position: relative;
+    bottom: 9%;
+    left: 60%;
+    color: black;
+    font-size: 18px;
+}
+
+.fontt h5:hover{
+
+color: #FF305B;;
+
+}
+
+
+ .imgg img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: vibrate 1s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
+  
+  .chefs{
+    height: 100%;
+    width: 100%;
+    background-color: var(--back-ground1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;}
+   .title h6 {
+color: #7F7F90;
+text-align: center;
+font-size: 25px;
+   }
+
+
+
+
+   .title{
+    background-color: var(--back-ground1);
+   }
+
+   .title span{
+    color: #CE1212;
+   }
+   .title h1 {
+    font-family: 'Amatic SC', cursive;
+    color:RGB(55, 55, 63);
+    font-size: 65px;
+text-align: center;
+font-weight: 100;
+color: var(--text-color);
+   }
+
+
+   .title h6  {
+    padding-top: 7%;
+    
+       }
+
+       .chef1{
+width:25% ;
+
+
+       }
+
+
+       .chef2{
+
+        
+        width:25% ;
+     
+
+       }
+
+
+
+       .chef3{
+
+        
+        width:25% ;
+        
+
+       }
+
+.chef{
+    height:650px;
+    position: relative;
+   box-shadow: 0 0 14px 0 #0000001b;
+   border-radius: 15px;
+
+
+}
+
+       .chef img{
+width: 100%;
+height: 70%;
+
+       }
+
+
+       .gallery{
+
+width: 100%;
+background-color: var(--back-ground2);  
+height: 150%;
+display: flex;
+justify-content: space-around;
+padding-bottom: 10%;
+       }
+
+
+       .gallery1{
+        width: 25%;
+        height: 100%;
+    
+
+       }
+
+       .gallery2{
+        width: 25%;
+    
+
+       }
+
+
+       .gallery3{
+        width: 25%;
+        
+    
+
+       }
+
+
+       .pic1{
+width: 100%;
+height: 30%;
+background-image: url(meal-1.jpg);
+background-size: 100% 100%;
+border: 5px solid white;
+position: relative;
+overflow: hidden;
+       }
+
+       .pic2{
+        width: 100%;
+        height: 50%;
+        
+margin-top: 5%;
+background-image: url(meal-4.jpg);
+background-size: 100% 100%;
+border: 3px solid white;
+position: relative;
+overflow: hidden;
+       }
+
+
+.title1{
+  background-color: var(--back-ground2);  
+}
+       .title1 h6 {
+       
+        text-align: center;
+        font-size: 25px;
+           }
+        
+        
+           .title1 span{
+            color: #CE1212;
+           }
+           .title1 h1 {
+            font-family: 'Amatic SC', cursive;
+            color:RGB(55, 55, 63);
+            font-size: 65px;
+        text-align: center;
+        font-weight: 100;
+        color: var(--text-color);
+           }
+        
+        
+           .title1 h6  {
+            padding-top: 7%;
+            
+               }
+
+
+
+
+ .pic3{
+width: 100%;
+height: 65%;
+
+background-image: url(meal-2.jpg);
+background-size: 100% 100%;
+border: 3px solid white;
+position: relative;
+overflow: hidden;
+               }
+
+
+
+ .pic4{
+    width: 100%;
+    height: 33%;
+ background-color: green;
+ margin-top: 5%;
+ background-image: url(meal-7.jpg);
+ background-size: 100% 100%;
+ border: 3px solid white;
+ position: relative;
+overflow: hidden;
+         }
+                               
+
+         .pic5{
+            width: 100%;
+            height: 25%;
+            background-image: url(meal-3.jpg);
+            background-size: 100% 100%;
+            border: 5px solid white;
+            position: relative;
+overflow: hidden;
+                   }
+
+                   
+                   .pic6{
+                    width: 100%;
+                    height: 25%;
+                    background-image: url(meal-5.jpg);
+                    background-size: 100% 100%;
+                    border: 5px solid white;
+                    margin-top: 5%;
+                    position: relative;
+overflow: hidden;
+                           }
+
+                           
+                           .pic7{
+                            width: 100%;
+                            height: 40%;
+                            background-image: url(meal-6.jpg);
+                            background-size: 100% 100%;
+                            border: 5px solid white;
+                            margin-top: 5%;
+                            position: relative;
+overflow: hidden;
+                                   }
+  .wave img{
+height: 15%;
+width: 100%;
+position: absolute;
+bottom: 29%;
+
+
+  }                          
+
+  .chef h1 {
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+font-size: 20px;
+margin-top: 2%;
+  }
+  .chef p {
+text-align: center;
+
+padding-right: 5%;
+padding-left: 5%;
+margin-bottom: 2%;
+font-size: 16px;
+  }
+
+  .chef:hover{
+    transform: scale(1.1);
+    
+  }
+
+
+  .l1{
+background-color: rgba(0, 0, 0, 0.7);
+position: absolute;
+top: 100%;
+left: 0%;
+color: white;
+width: 100%;
+height: 100%;
+text-align: center;
+  }
+
+  .l2{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+  }
+
+  .l3{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+  }
+
+  .l4{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+  }
+
+  .l5{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+  }
+
+  .l6{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+  }
+
+  .l7{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+  }
+
+
+  .pic1:hover .l1{
+transition-duration: 1s;
+position: absolute;
+top:0;
+
+  }
+
+
+  .pic2:hover .l2{
+    transition-duration: 1s;
+    position: absolute;
+    top:0;
+    
+    
+      }
+
+
+      .pic3:hover .l3{
+        transition-duration: 1s;
+        position: absolute;
+        top:0;
+        
+        
+          }
+
+
+          .pic4:hover .l4{
+            transition-duration: 1s;
+            position: absolute;
+            top:0;
+            
+            
+              }
+
+              .pic5:hover .l5{
+                transition-duration: 1s;
+                position: absolute;
+                top:0;
+                
+                
+                  }
+
+
+                  .pic6:hover .l6{
+                    transition-duration: 1s;
+                    position: absolute;
+                    top:0;
+                    
+                    
+                      }
+
+
+                      .pic7:hover .l7{
+                        transition-duration: 1s;
+                        position: absolute;
+                        top:0;
+                        
+                        
+                          }
+
+             .l h3{
+                      font-size: 30px; 
+               margin-top: 45%;
+                          }
+   .contactt iframe {
+ 
+    position: relative;
+    left: 11%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+   }                       
+   .contactt{
+    background-color: var(--back-ground1);
+    width: 100%;
+   }
+
+
+   .card{
+width: 80%;
+margin-left: 11%;
+
+padding-bottom: 20%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+   }
+
+.cards{
+  background-color: var(--back-ground2);
+width: 45%;
+padding: 1% ;
+
+
+}
+
+
+
+
+.card3{
+  
+  margin-top: 2%;
+}
+
+
+.card4{
+  
+  margin-top: 2%;
+}
+
+.cards i {
+
+color: rgb(224, 26, 26);
+font-size: 25px;
+
+
+}
+
+
+.cards h6 {
+
+position: relative;
+left: 10%;
+bottom: 2%;
+font-size: 25px;
+color: RGB(55, 55, 63);
+color: var(--text-color);
+}
+
+.cards p {
+
+  position: relative;
+  left: 10%;
+  bottom: 2%;
+  font-size: 25px;
+  
+  }
+
+
+  .contact {
+    margin-top: 5%;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .contacttt input[type="text"],
+  .contacttt input[type="email"],
+  .contacttt textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--back-ground2);;
+    border-radius: 4px;
+
+  }
+  
+  
+  .contacttt textarea {
+    height: 100px;
+  }
+  
+  .contacttt button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FF305B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contacttt button[type="submit"]:hover {
+    background-color: red;
+  }
+
+  
+  .contacttt{
+    width:  80%;
+    
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+  
+        }
+        
+      .contacttt form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    bottom: 160px;
+    box-shadow: 0 0 2px 0 #0000001b;
+      }
+
+      
+  .contacttt button{display: inline-block;
+
+    border: none;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 30px;
+    margin-top: 2%;
+    width: 12%;
+    font-size: 18px;
+    background-color: rgb(239, 41, 41);
+    font-weight: 400;
+    color:white;
+    }
+
+
+    .nav ul li a:hover{
+color: #000;
+border-bottom: solid 2px #CE1212;
+transition: 0s;
+    }
+   
